@@ -18,8 +18,17 @@ def find_prime_number(lst: list) -> list:
 
 
 def main() -> None:
-    print(find_prime_number([0, 100])) 
+    
+    ask_user = input("Enter the range of number (comma to seperate): ").split(",")
+    
+    lst_num = [int(num.strip()) for num in ask_user]
 
+    result = find_prime_number(lst_num)
+    
+    if result:
+        print(f"The prime are {result}")
+    else:
+        print("There are None Prime Number.")
     
 if __name__ == "__main__":
     main()

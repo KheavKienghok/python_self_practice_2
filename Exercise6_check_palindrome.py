@@ -18,18 +18,6 @@ def check_palindrome(word: str) -> str:
     return words == words[::-1]
 
 def main() -> None:
-    """
-    Prompt the user to enter a word, check if it's a palindrome,
-    and print the result.
-
-    This function prompts the user to enter a word via the standard input (stdin),
-    then checks if the entered word is a palindrome using the check_palindrome
-    function. It prints a message indicating whether the word is a palindrome
-    or not to the standard output (stdout).
-
-    Returns:
-    - None: This function does not return any value.
-    """
     
     ask_user = input("Enter the word: ")
     

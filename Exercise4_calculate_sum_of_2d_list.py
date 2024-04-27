@@ -20,10 +20,6 @@ def sum_2d_list(lst: list) -> int:
     
     
 def main() -> None:
-    
-    """
-    Main function to demonstrate summing up a 2D list.
-    """
 
     ask_user = input("Enter numbers for the 2D list (separated by comma): ").split(",")
     

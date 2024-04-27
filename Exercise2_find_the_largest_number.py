@@ -29,19 +29,6 @@ def largest_number(lst: list) -> int:
 
 
 def main() -> None:
-    """
-    Prompt the user to enter a list of numbers, find the largest number,
-    and print the result.
-
-    This function prompts the user to enter a list of numbers separated by 
-    commas via the standard input (stdin). It then converts the input string 
-    into a list of numbers using the `eval` function and the `split` method. 
-    It calls the `largest_number` function to find the largest number in the 
-    list and prints the result to the standard output (stdout).
-
-    Returns:
-    - None: This function does not return any value.
-    """
     
     ask_user = input("Enter the number (seperate by comma): ").split(",")
     

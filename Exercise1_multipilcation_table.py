@@ -26,18 +26,6 @@ def multiplication(number: int) -> str:
 
         
 def main() -> None:
-    """
-    Prompt the user to enter a number, generate its multiplication table,
-    and print the result.
-
-    This function prompts the user to enter a number via the standard input (stdin),
-    then generates the multiplication table for the entered number using the
-    multiplication function. It prints the generated multiplication table to
-    the standard output (stdout).
-
-    Returns:
-    - None: This function does not return any value.
-    """
     
     ask_user = int(input("Enter the number: "))
     
