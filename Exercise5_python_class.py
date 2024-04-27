@@ -1,7 +1,28 @@
 class Stack_data():   
     
+    """
+    A simple stack implementation using a list.
+
+    This class represents a stack data structure where items are 
+    added and removed according to the Last-In-First-Out (LIFO) 
+    principle.
+
+    Example usage:
+    ```
+    stack = Stack_data()
+    stack.push_item(1)
+    stack.push_item(2)
+    stack.push_item(3)
+    print(stack.pop_item())  # Output: 3
+    print(stack.pop_item())  # Output: 2
+    print(stack.pop_item())  # Output: 1
+    print(stack.pop_item())  # Output: None
+    ```
+
+    """
+
     def __init__(self):
-        self.item = []
+        pass
         
     def push_item(self, item):
         """
@@ -11,8 +32,7 @@ class Stack_data():
         - self: The instance of the class.
         - item: The item to be pushed onto the stack.
         """
-        
-        self.item.append(item)
+        pass
         
     def pop_item(self) -> None:
         """
@@ -27,11 +47,7 @@ class Stack_data():
         Returns:
         - The popped item from the stack, or None if the stack is empty.
         """
-        
-        if not self.is_empty():
-            return self.item.pop()
-        
-        return None
+        pass
     
     def is_empty(self) -> None:
         """
@@ -40,34 +56,13 @@ class Stack_data():
         Returns:
         - True if the stack is empty, False otherwise.
         """
-        
-        return len(self.item) == 0
+        pass
     
     
 def main():
     # Create an instance of the Stack_data class
     stack = Stack_data()
-    
-    while True:
-        ask_user = input("Enter the command (add, pop, quit): ")
-        
-        if ask_user in ["quit", "q"]:
-            break
-        
-        elif ask_user == "add":
-            ask_add = input("Enter the item you want to add: ")
-            stack.push_item(ask_add)
-            print(f"{ask_add} has been added!")
-        
-        elif ask_user == "pop":
-            popped_item = stack.pop_item()
-            if popped_item is not None:
-                print(f"{popped_item} has been removed!")
-            else:
-                print("Stack is empty!")
-            
-        else:
-            print("Invalid input!!")
-    
+    pass
+
 if __name__ == "__main__":
     main()

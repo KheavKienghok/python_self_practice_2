@@ -1,37 +1,32 @@
 def multiplication(number: int) -> str:
     """
-    Generate a multiplication table for the given number.
-
     Args:
     - number (int): The number for which to generate the multiplication table.
 
     Returns:
     - str: A string representing the multiplication table for the given number.
 
-    The function generates a multiplication table for the specified number,
-    ranging from 1 to 10. Each line of the table contains the multiplication
-    expression in the format "number * x = result", where 'number' is the
-    specified number, 'x' ranges from 1 to 10, and 'result' is the product
-    of 'number' and 'x'. The table is returned as a single string, with each
-    line separated by a newline character.
+    Example:
+    ```
+    >>> multiplication(5)
+    '5 * 1 = 5
+     5 * 2 = 10
+     5 * 3 = 15
+     5 * 4 = 20
+     5 * 5 = 25
+     5 * 6 = 30
+     5 * 7 = 35
+     5 * 8 = 40
+     5 * 9 = 45
+     5 * 10 = 50'
+    ```
     """
-    
-    table = ""
-    
-    for x in range(1, 11):
-        table += f"{number:<2} * {x:<2} = {number * x}\n"
-        
-    return table
+    pass
 
 
         
 def main() -> None:
-    
-    ask_user = int(input("Enter the number: "))
-    
-    result = multiplication(ask_user)
-    
-    print(result)
+    pass
     
     
 if __name__ == "__main__":
