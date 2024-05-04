@@ -12,7 +12,12 @@ def largest_number(lst: list) -> int:
     9
     ```
     """
-    pass
+    result = lst[0]
+    for number in lst:
+        if number > result:
+            result = number
+            
+    return result
 
 
 
