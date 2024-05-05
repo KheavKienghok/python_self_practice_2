@@ -36,3 +36,5 @@ class TestFindPrimeNumber(unittest.TestCase):
     # Test with None input
     def test_find_prime_none_input(self):
         self.assertEqual(find_prime_number([]), [])
+        
+        

@@ -19,3 +19,4 @@ class TestMultiple(unittest.TestCase):
     # Test multiplication table for zero
     def test_zero_multiplication(self):
         self.assertEqual(multiplication(0), "0 * 1 = 0\n0 * 2 = 0\n0 * 3 = 0\n0 * 4 = 0\n0 * 5 = 0\n0 * 6 = 0\n0 * 7 = 0\n0 * 8 = 0\n0 * 9 = 0\n0 * 10 = 0\n")
+

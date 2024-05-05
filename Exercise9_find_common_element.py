@@ -17,8 +17,10 @@ def find_common_num(lst1: list, lst2: list) -> list:
     
 
 
+
 def main() -> None:
     pass
+
     
     
 if __name__ == "__main__":

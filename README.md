@@ -15,7 +15,6 @@ This repository contains a set of Python practice exercises for beginner student
 - [Exercise 7: Prime Numbers in a Range](#exercise-7-prime-numbers-in-a-range)
 - [Exercise 8: Fibonacci Sequence](#exercise-8-fibonacci-sequence)
 - [Exercise 9: Find Common Elements in Lists](#exercise-9-find-common-elements-in-lists)
-- [Exercise 10: Tic-Tac-Toe Game](#exercise-10-tic-tac-toe-game)
 
 ## How to Use
 
@@ -79,9 +78,6 @@ Write a Python function to generate the Fibonacci sequence up to a given number.
 
 Write a Python function that takes two lists as input and returns a new list containing common elements between the two lists
 
-### Exercise 10: Tic-Tac-Toe Game
-
-Create a Python class representing a Tic-Tac-Toe game. Implement methods to check for a win, make a move, and display the board.
 
 ## License
 

@@ -14,8 +14,12 @@ def fibonacci_sequence(number: int) -> list:
     """
     pass
 
+
+
 def main() -> None:
     pass
+  
+  
     
     
 if __name__ == "__main__":

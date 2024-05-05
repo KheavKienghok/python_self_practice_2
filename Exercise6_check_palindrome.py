@@ -16,8 +16,12 @@ def check_palindrome(word: str) -> str:
     """
     pass
 
+
+
 def main() -> None:
     pass
+
+
 
 if __name__ == "__main__":
     main()

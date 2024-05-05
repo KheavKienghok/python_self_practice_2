@@ -24,3 +24,6 @@ class TestFindCommonNum(unittest.TestCase):
 
         # Test case with duplicate numbers
         self.assertEqual(find_common_num([1, 2, 2, 3, 4], [2, 2, 5, 6, 7]), [2])
+        
+        
+        

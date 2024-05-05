@@ -41,4 +41,6 @@ class TestCheckPalidrio(unittest.TestCase):
             check_palindrome(123)
             check_palindrome(3.14)
             check_palindrome(['a', 'b', 'c'])
+            
+            
         

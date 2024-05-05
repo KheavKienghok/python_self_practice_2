@@ -21,6 +21,7 @@ class Stack_data():
 
     """
 
+
     def __init__(self):
         pass
         
@@ -33,6 +34,7 @@ class Stack_data():
         - item: The item to be pushed onto the stack.
         """
         pass
+     
         
     def pop_item(self) -> None:
         """
