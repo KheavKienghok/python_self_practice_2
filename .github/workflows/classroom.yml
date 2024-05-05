@@ -9,7 +9,6 @@ permissions:
   checks: write
   actions: read
   contents: read
-
 jobs:
   run-autograding-tests:
     runs-on: ubuntu-latest
@@ -17,18 +16,80 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: test_main.py
-      id: test_main-py
-      uses: education/autograding-command-grader@v1
+    - name: exercise 1
+      id: exercise-1
+      uses: education/autograding-python-grader@v1
       with:
-        test-name: test_main.py
+        timeout: 1
+        max-score: 1
         setup-command: sudo -H pip3 install pytest
-        command: pytest -v test_main.py
-        timeout: 10
-        max-score: 40
+    - name: exercise 2
+      id: exercise-2
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 5
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 3
+      id: exercise-3
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 1
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 4
+      id: exercise-4
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 1
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 5
+      id: exercise-5
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 2
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 6
+      id: exercise-6
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 3
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 7
+      id: exercise-7
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 2
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 8
+      id: exercise-8
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 2
+        setup-command: sudo -H pip3 install pytest
+    - name: exercise 9
+      id: exercise-9
+      uses: education/autograding-python-grader@v1
+      with:
+        timeout: 1
+        max-score: 2
+        setup-command: sudo -H pip3 install pytest 
     - name: Autograding Reporter
       uses: education/autograding-grading-reporter@v1
       env:
-        TEST_MAIN-PY_RESULTS: "${{steps.test_main-py.outputs.result}}"
+        EXERCISE-1_RESULTS: "${{steps.exercise-1.outputs.result}}"
+        EXERCISE-2_RESULTS: "${{steps.exercise-2.outputs.result}}"
+        EXERCISE-3_RESULTS: "${{steps.exercise-3.outputs.result}}"
+        EXERCISE-4_RESULTS: "${{steps.exercise-4.outputs.result}}"
+        EXERCISE-5_RESULTS: "${{steps.exercise-5.outputs.result}}"
+        EXERCISE-6_RESULTS: "${{steps.exercise-6.outputs.result}}"
+        EXERCISE-7_RESULTS: "${{steps.exercise-7.outputs.result}}"
+        EXERCISE-8_RESULTS: "${{steps.exercise-8.outputs.result}}"
+        EXERCISE-9_RESULTS: "${{steps.exercise-9.outputs.result}}"
       with:
-        runners: test_main-py
+        runners: exercise-1,exercise-2,exercise-3,exercise-4,exercise-5,exercise-6,exercise-7,exercise-8,exercise-9
